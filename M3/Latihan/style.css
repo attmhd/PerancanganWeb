@@ -1,0 +1,16 @@
+h1,
+h2 {
+    color: blueviolet;
+}
+
+.box p {
+    color: red;
+}
+
+.list li {
+    color: blue;
+}
+
+.list .done {
+    color: green;
+}
