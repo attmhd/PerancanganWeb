@@ -6,6 +6,9 @@ module.exports = {
             center: true,
         },
         extend: {
+            spacing: {
+                'spasi': '1 px',
+            },
             colors: {
                 primary: "#f5f5f5",
                 second: "#3088D9",
