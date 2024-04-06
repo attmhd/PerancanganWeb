@@ -1159,6 +1159,16 @@ video {
     padding-right: 0px;
   }
 
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:px-px {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
   .lg\:pr-40 {
     padding-right: 10rem;
   }
