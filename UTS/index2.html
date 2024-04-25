@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Less/More Button</title>
+    <style>
+        .content {
+            display: none;
+            /* Initially hide the content */
+            overflow: hidden;
+            /* Prevent content from overflowing container */
+            transition: max-height 0.5s ease;
+            /* Smooth transition for expanding/collapsing */
+        }
+        
+        .content.expanded {
+            display: block;
+            max-height: 200px;
+            /* Adjust this value to control the expanded content height */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Expandable Content</h1>
+    <p id="content" class="content">This is a long paragraph of content that will be initially hidden. Clicking the Less/More button will toggle its visibility and smoothly expand or collapse it.</p>
+    <button id="toggleButton">show</button>
+
+    <script>
+        const content = document.getElementById('content');
+        const toggleButton = document.getElementById('toggleButton');
+
+        function toggleContent() {
+            content.classList.toggle('expanded');
+
+            if (content.classList.contains('expanded')) {
+                toggleButton.textContent = 'hide'; // Change button text to "More" when expanded
+            } else {
+                toggleButton.textContent = 'show'; // Change button text to "Less" when collapsed
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleContent);
+    </script>
+</body>
+
+</html>
